@@ -5,6 +5,7 @@ using UnityEngine;
 public class MapGenerator : MonoBehaviour {
 	public GameObject blankFloor;
 	public GameObject StationaryShooter;
+	public GameObject projectile;
 
 	public static int width = 6;
 	public static int height = 75;
