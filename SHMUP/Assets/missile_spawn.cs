@@ -13,7 +13,7 @@ public class missile_spawn : MonoBehaviour {
     }
 
     void launchMissile() {
-        Rigidbody instance = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
+        Rigidbody instance = Instantiate(projectile, new Vector3(transform.position.x, transform.position.y + 5, transform.position.z), Quaternion.identity).GetComponent<Rigidbody>();
         instance.AddForce(transform.forward * 5);
     }
 }
