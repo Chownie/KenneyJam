@@ -11,11 +11,11 @@ public class bigShot : MonoBehaviour {
 	}
 
 	void spawnMissile(){
-		InvokeRepeating("launchMissile", 2.0f, 0.3f);
+		InvokeRepeating("launchMissile", 2.0f, 1f);
 	}
 
 	void launchMissile() {
 		Rigidbody instance = Instantiate(bigProjectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
-		instance.AddForce(transform.forward * 5);
+		instance.AddForce(transform.forward * 5000);
 	}
 }
